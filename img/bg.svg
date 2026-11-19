@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Dark Gradient Background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040a0f"/>
+      <stop offset="40%" stop-color="#091816"/>
+      <stop offset="70%" stop-color="#061214"/>
+      <stop offset="100%" stop-color="#03080c"/>
+    </linearGradient>
+
+    <!-- Emerald Glow -->
+    <radialGradient id="glowEmerald" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Amber Glow -->
+    <radialGradient id="glowAmber" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Teal Glow -->
+    <radialGradient id="glowTeal" cx="70%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Food & Grain Pattern -->
+    <pattern id="grainPattern" width="120" height="120" patternUnits="userSpaceOnUse">
+      <!-- Leaf 1 -->
+      <path d="M20 40 Q30 20 40 40 Q30 60 20 40 Z" fill="none" stroke="#10b981" stroke-opacity="0.04" stroke-width="1.5"/>
+      <path d="M20 40 L40 40" stroke="#10b981" stroke-opacity="0.04" stroke-width="1"/>
+      
+      <!-- Leaf 2 -->
+      <path d="M80 90 Q90 70 100 90 Q90 110 80 90 Z" fill="none" stroke="#f59e0b" stroke-opacity="0.04" stroke-width="1.5"/>
+      <path d="M80 90 L100 90" stroke="#f59e0b" stroke-opacity="0.04" stroke-width="1"/>
+
+      <!-- Dots / Grain -->
+      <circle cx="60" cy="20" r="1.5" fill="#10b981" fill-opacity="0.06"/>
+      <circle cx="15" cy="85" r="1.5" fill="#f59e0b" fill-opacity="0.06"/>
+      <circle cx="105" cy="35" r="2" fill="#34d399" fill-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <!-- Base Layer -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+
+  <!-- Radial Glows -->
+  <rect width="100%" height="100%" fill="url(#glowEmerald)"/>
+  <rect width="100%" height="100%" fill="url(#glowAmber)"/>
+  <rect width="100%" height="100%" fill="url(#glowTeal)"/>
+
+  <!-- Pattern Overlay -->
+  <rect width="100%" height="100%" fill="url(#grainPattern)"/>
+
+  <!-- Abstract Waves -->
+  <path d="M-100 400 Q400 200 960 450 T2020 350" fill="none" stroke="#10b981" stroke-opacity="0.06" stroke-width="2"/>
+  <path d="M-100 450 Q400 250 960 500 T2020 400" fill="none" stroke="#f59e0b" stroke-opacity="0.04" stroke-width="1.5"/>
+  <path d="M-100 700 Q500 550 1100 750 T2020 650" fill="none" stroke="#059669" stroke-opacity="0.05" stroke-width="2"/>
+</svg>

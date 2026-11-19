@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artikel & Tips Pangan - PT Sinar Pangan Digital. Informasi terkini seputar nutrisi, resep masakan, dan tips dapur sehat.">
+    <meta name="theme-color" content="#059669">
+    <title>Artikel &amp; Tips - PT Sinar Pangan Digital</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Accessibility: Skip to main content -->
+    <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar navbar-expand-lg navbar-sp sticky-top" role="navigation" aria-label="Navigasi utama">
+        <div class="container">
+            <a class="navbar-brand-sp" href="index.html" aria-label="PT Sinar Pangan Digital - Beranda">
+                <img src="img/logo.svg" alt="Logo PT Sinar Pangan Digital" class="brand-logo-img">
+                <span>Sinar Pangan</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav nav-sp ms-auto gap-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door me-1"></i>Beranda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang.html">
+                            <i class="bi bi-building me-1"></i>Tentang
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produk.html">
+                            <i class="bi bi-box-seam me-1"></i>Produk
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="artikel.html" aria-current="page">
+                            <i class="bi bi-journal-text me-1"></i>Artikel
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">
+                            <i class="bi bi-envelope me-1"></i>Kontak
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <main class="main-content" id="main-content" role="main">
+        <div class="container mt-4 mb-5">
+            <section class="ani text-center mb-4">
+                <div class="section-badge"><i class="bi bi-journal-text"></i> Artikel &amp; Tips</div>
+                <h1 class="section-title">Artikel <span class="gradient-text">&amp; Tips Pangan</span></h1>
+                <p class="section-subtitle mx-auto">Informasi terkini seputar pangan, nutrisi, dan tips memasak untuk keluarga Anda</p>
+            </section>
+            <section class="row g-3 g-md-4" aria-label="Daftar artikel" role="list">
+                <!-- Article 1 -->
+                <div class="col-md-6 col-lg-4 ani ani-d1" role="listitem">
+                    <article class="glass article-card h-100">
+                        <div class="article-img" style="background:linear-gradient(135deg,rgba(245,158,11,.1),rgba(217,119,6,.06))"><i class="bi bi-egg-fried" style="font-size:2.5rem;color:var(--amber-400)"></i></div>
+                        <div class="d-flex align-items-center gap-2 mb-2"><span class="badge-sp badge-sp-amber" style="font-size:.65rem">Resep</span><span class="article-meta"><i class="bi bi-calendar3 me-1"></i>8 Agu 2026</span></div>
+                        <h3 class="fw-bold mb-2" style="font-size:.95rem;line-height:1.4">5 Resep Masakan Rumahan Sehat dengan Minyak Kelapa Murni</h3>
+                        <p class="text-secondary small mb-3" style="line-height:1.6">Minyak kelapa murni bukan hanya untuk perawatan tubuh. Berikut 5 resep masakan sehari-hari yang lebih sehat menggunakan VCO...</p>
+                        <a href="#" class="btn-sp btn-sp-outline btn-sp-sm" onclick="event.preventDefault();showToast('Fitur baca selengkapnya segera hadir!','success')">Baca <i class="bi bi-arrow-right"></i></a>
+                    </article>
+                </div>
+                <!-- Article 2 -->
+                <div class="col-md-6 col-lg-4 ani ani-d2" role="listitem">
+                    <article class="glass article-card h-100">
+                        <div class="article-img" style="background:linear-gradient(135deg,rgba(99,102,241,.1),rgba(139,92,246,.06))"><i class="bi bi-moisture" style="font-size:2.5rem;color:#a78bfa"></i></div>
+                        <div class="d-flex align-items-center gap-2 mb-2"><span class="badge-sp" style="font-size:.65rem;background:linear-gradient(135deg,#6366f1,#8b5cf6)">Tips</span><span class="article-meta"><i class="bi bi-calendar3 me-1"></i>5 Agu 2026</span></div>
+                        <h3 class="fw-bold mb-2" style="font-size:.95rem;line-height:1.4">Cara Tepat Menyimpan Tepung Agar Awet dan Bebas Kutu</h3>
+                        <p class="text-secondary small mb-3" style="line-height:1.6">Banyak ibu rumah tangga mengeluhkan tepung yang cepat berkutu. Simak cara penyimpanan tepung yang benar agar tahan lama...</p>
+                        <a href="#" class="btn-sp btn-sp-outline btn-sp-sm" onclick="event.preventDefault();showToast('Fitur baca selengkapnya segera hadir!','success')">Baca <i class="bi bi-arrow-right"></i></a>
+                    </article>
+                </div>
+                <!-- Article 3 -->
+                <div class="col-md-6 col-lg-4 ani ani-d3" role="listitem">
+                    <article class="glass article-card h-100">
+                        <div class="article-img" style="background:linear-gradient(135deg,rgba(16,185,129,.1),rgba(5,150,105,.06))"><i class="bi bi-tree" style="font-size:2.5rem;color:var(--green-400)"></i></div>
+                        <div class="d-flex align-items-center gap-2 mb-2"><span class="badge-sp" style="font-size:.65rem">Edukasi</span><span class="article-meta"><i class="bi bi-calendar3 me-1"></i>1 Agu 2026</span></div>
+                        <h3 class="fw-bold mb-2" style="font-size:.95rem;line-height:1.4">Mengenal Manfaat Gula Aren: Alternatif Pemanis yang Lebih Sehat</h3>
+                        <p class="text-secondary small mb-3" style="line-height:1.6">Gula aren kini makin populer sebagai pengganti gula pasir. Ketahui manfaat nutrisi dan cara membedakan gula aren asli...</p>
+                        <a href="#" class="btn-sp btn-sp-outline btn-sp-sm" onclick="event.preventDefault();showToast('Fitur baca selengkapnya segera hadir!','success')">Baca <i class="bi bi-arrow-right"></i></a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer-sp" role="contentinfo">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="img/logo.svg" alt="Logo PT Sinar Pangan Digital" class="brand-logo-img">
+                        <span class="footer-brand" style="font-size:1.1rem">Sinar Pangan Digital</span>
+                    </div>
+                    <p style="color:var(--text-secondary);font-size:.85rem;line-height:1.7">Menyediakan produk pangan berkualitas tinggi untuk kebutuhan rumah tangga dan industri di seluruh Indonesia sejak 2010.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="footer-title">Navigasi</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="artikel.html">Artikel</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h6 class="footer-title">Kategori Produk</h6>
+                    <ul class="footer-links">
+                        <li><a href="produk.html">Beras Premium</a></li>
+                        <li><a href="produk.html">Minyak Goreng</a></li>
+                        <li><a href="produk.html">Tepung &amp; Gandum</a></li>
+                        <li><a href="produk.html">Bumbu &amp; Rempah</a></li>
+                        <li><a href="produk.html">Gula &amp; Pemanis</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="footer-title">Hubungi Kami</h6>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-geo-alt me-1" style="color:var(--green-500)"></i> Jl. Pangan Jaya No. 45, Jakarta Timur</li>
+                        <li><i class="bi bi-telephone me-1" style="color:var(--green-500)"></i> +62 21 8765 4321</li>
+                        <li><i class="bi bi-envelope me-1" style="color:var(--green-500)"></i> info@sinarpangan.co.id</li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="border-color:var(--glass-border);margin:0 0 1rem">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start"><p>&copy; 2026 <span class="footer-brand">PT Sinar Pangan Digital</span>. All rights reserved.</p></div>
+                <div class="col-md-6 text-center text-md-end"><p><i class="bi bi-shield-check me-1" style="color:var(--green-500)"></i> BPOM &amp; Halal Certified</p></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toastNotif" class="toast-sp" role="alert" aria-live="polite"></div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>

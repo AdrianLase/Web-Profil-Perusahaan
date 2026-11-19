@@ -1,0 +1,163 @@
+:root {
+    /* Warna Background Utama (Ubah kode hex di sini) */
+    --dark-bg: #060d13;
+    
+    /* Overlay kegelapan jika menggunakan gambar background (0.0 - 1.0) */
+    --bg-overlay: rgba(6, 13, 19, 0.85);
+
+    --green-50:#ecfdf5;--green-100:#d1fae5;--green-200:#a7f3d0;
+    --green-400:#34d399;--green-500:#10b981;--green-600:#059669;
+    --green-700:#047857;--green-800:#065f46;--green-900:#064e3b;
+    --amber-400:#fbbf24;--amber-500:#f59e0b;--amber-600:#d97706;
+    --red-500:#ef4444;--red-600:#dc2626;
+    --primary-gradient:linear-gradient(135deg,#10b981 0%,#059669 50%,#047857 100%);
+    --accent-gradient:linear-gradient(135deg,#f59e0b 0%,#d97706 100%);
+    --danger-gradient:linear-gradient(135deg,#ef4444 0%,#dc2626 100%);
+    --glass-bg:rgba(16,185,129,0.04);
+    --glass-border:rgba(16,185,129,0.12);
+    --glass-border-hover:rgba(16,185,129,0.25);
+    --text-primary:#ecfdf5;
+    --text-secondary:#86b8a0;
+    --text-muted:#4a7c66;
+    --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--radius-full:9999px;
+    --shadow-glow:0 4px 20px rgba(16,185,129,0.15);
+    --shadow-glow-lg:0 8px 40px rgba(16,185,129,0.2);
+    --transition:0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* -- Reset & Base -- */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body {
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    background-color: #060d13;
+    
+    /* Gambar background dari folder img/bg.jpg */
+    background-image: linear-gradient(rgba(6, 13, 19, 0.75), rgba(6, 13, 19, 0.75)), url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: var(--text-primary);
+    min-height: 100vh; display: flex; flex-direction: column;
+    overflow-x: hidden; line-height: 1.6; -webkit-font-smoothing: antialiased;
+}
+
+/* -- Navbar -- */
+.navbar-sp{background:rgba(6,13,19,.88);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border-bottom:1px solid var(--glass-border);padding:.6rem 0;z-index:1050;transition:var(--transition)}
+.navbar-brand-sp{font-weight:800;font-size:1.15rem;background:var(--primary-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:flex;align-items:center;gap:.5rem;text-decoration:none}
+.brand-logo{width:34px;height:34px;background:var(--primary-gradient);border-radius:10px;display:flex;align-items:center;justify-content:center;-webkit-text-fill-color:#fff;flex-shrink:0}
+.brand-logo-img{height:36px;width:36px;object-fit:cover;border-radius:10px;flex-shrink:0;transition:var(--transition)}
+.brand-logo-img:hover{transform:scale(1.08)}
+.nav-sp .nav-link{color:var(--text-secondary)!important;font-weight:500;font-size:.85rem;padding:.45rem .9rem!important;border-radius:var(--radius-sm);transition:var(--transition)}
+.nav-sp .nav-link:hover{color:var(--text-primary)!important;background:var(--glass-bg)}
+.nav-sp .nav-link.active{color:#fff!important;background:var(--primary-gradient);box-shadow:var(--shadow-glow)}
+.navbar-toggler{border:1px solid var(--glass-border);padding:.35rem .55rem}
+.navbar-toggler-icon{filter:invert(1)}
+
+/* -- Glass Card -- */
+.glass{background:var(--glass-bg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:1.5rem;transition:var(--transition)}
+.glass:hover{border-color:var(--glass-border-hover);box-shadow:0 8px 30px rgba(0,0,0,.25);transform:translateY(-2px)}
+.glass-static{background:var(--glass-bg);backdrop-filter:blur(16px);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:1.5rem}
+
+/* -- Icon Box -- */
+.icon-box{width:48px;height:48px;border-radius:var(--radius-md);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem;color:#fff}
+.icon-box-sm{width:40px;height:40px;font-size:1rem;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff}
+.icon-box-lg{width:56px;height:56px;font-size:1.4rem;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff}
+
+/* -- Buttons -- */
+.btn-sp{border:none;color:#fff;font-weight:600;padding:.6rem 1.5rem;border-radius:var(--radius-md);transition:var(--transition);cursor:pointer;display:inline-flex;align-items:center;gap:.4rem;text-decoration:none;font-size:.9rem}
+.btn-sp-primary{background:var(--primary-gradient);box-shadow:var(--shadow-glow)}
+.btn-sp-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow-glow-lg);color:#fff}
+.btn-sp-accent{background:var(--accent-gradient);box-shadow:0 4px 15px rgba(245,158,11,.25)}
+.btn-sp-accent:hover{transform:translateY(-2px);color:#fff}
+.btn-sp-outline{background:transparent;border:1px solid var(--glass-border);color:var(--text-secondary);box-shadow:none}
+.btn-sp-outline:hover{background:var(--glass-bg);color:var(--text-primary);border-color:var(--glass-border-hover)}
+.btn-sp-sm{padding:.35rem .9rem;font-size:.8rem;border-radius:var(--radius-sm)}
+.btn-sp-lg{padding:.75rem 2rem;font-size:1rem;border-radius:var(--radius-md)}
+
+/* -- Form Controls -- */
+.form-sp{background:rgba(0,0,0,.25);border:1px solid var(--glass-border);color:var(--text-primary);border-radius:var(--radius-md);padding:.7rem 1rem;transition:var(--transition);font-family:inherit;width:100%}
+.form-sp:focus{background:rgba(0,0,0,.35);border-color:var(--green-500);color:var(--text-primary);box-shadow:0 0 0 3px rgba(16,185,129,.2);outline:none}
+.form-sp::placeholder{color:var(--text-muted)}
+.form-sp.is-invalid{border-color:var(--red-500)}
+.form-sp.is-invalid:focus{box-shadow:0 0 0 3px rgba(239,68,68,.2)}
+.form-sp.is-valid{border-color:var(--green-500)}
+.form-sp.is-valid:focus{box-shadow:0 0 0 3px rgba(16,185,129,.2)}
+.invalid-feedback-sp{color:var(--red-500);font-size:.8rem;margin-top:.3rem;display:none}
+.form-sp.is-invalid~.invalid-feedback-sp{display:block}
+label.form-label-sp{font-weight:500;font-size:.88rem;color:var(--text-secondary);margin-bottom:.35rem;display:block}
+
+/* -- Badge -- */
+.badge-sp{background:var(--primary-gradient);font-weight:600;font-size:.72rem;padding:.35em .75em;border-radius:6px;display:inline-flex;align-items:center;gap:.25rem;color:#fff}
+.badge-sp-amber{background:var(--accent-gradient);color:#1a1a2e}
+.badge-sp-outline{background:transparent;border:1px solid var(--glass-border);color:var(--text-secondary);font-weight:500}
+
+/* -- Section Headers -- */
+.section-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:600;padding:.4rem 1rem;background:var(--primary-gradient);border-radius:var(--radius-full);margin-bottom:.75rem;color:#fff}
+.section-title{font-weight:800;font-size:1.75rem;margin-bottom:.4rem;letter-spacing:-.5px;line-height:1.2}
+.section-subtitle{color:var(--text-secondary);font-size:.95rem;margin-bottom:2rem;max-width:550px}
+.section-subtitle.mx-auto{margin-left:auto;margin-right:auto}
+.gradient-text{background:var(--primary-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* -- Footer -- */
+.footer-sp{background:rgba(6,13,19,.92);backdrop-filter:blur(20px);border-top:1px solid var(--glass-border);padding:2.5rem 0 1.5rem;position:relative;z-index:1}
+.footer-sp p{margin:0;color:var(--text-muted);font-size:.82rem}
+.footer-brand{font-weight:700;background:var(--primary-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.footer-links{list-style:none;padding:0}
+.footer-links li{margin-bottom:.4rem}
+.footer-links a{color:var(--text-secondary);text-decoration:none;font-size:.85rem;transition:var(--transition)}
+.footer-links a:hover{color:var(--green-400)}
+.footer-title{font-weight:700;font-size:.9rem;margin-bottom:.8rem;color:var(--text-primary)}
+
+/* -- Main Content -- */
+.main-content{position:relative;z-index:1;flex:1}
+
+/* -- Hero -- */
+.hero{padding:3rem 0 2.5rem;text-align:center}
+.hero h1{font-size:2rem;font-weight:900;letter-spacing:-1px;margin-bottom:1rem;line-height:1.15}
+.hero .lead{color:var(--text-secondary);font-size:1rem;max-width:540px;margin:0 auto 1.5rem;line-height:1.7}
+
+/* -- Filter Buttons -- */
+.filter-btn{padding:.4rem 1rem;border-radius:var(--radius-full);border:1px solid var(--glass-border);background:transparent;color:var(--text-secondary);font-weight:500;font-size:.82rem;cursor:pointer;transition:var(--transition);white-space:nowrap}
+.filter-btn:hover{background:var(--glass-bg);color:var(--text-primary);border-color:var(--glass-border-hover)}
+.filter-btn.active{background:var(--primary-gradient);color:#fff;border-color:transparent;box-shadow:var(--shadow-glow)}
+
+/* -- Product Card -- */
+.product-card{transition:var(--transition);opacity:1;transform:scale(1)}
+.product-card.hiding{opacity:0;transform:scale(.92)}
+.price-tag{font-weight:700;font-size:1.1rem;background:var(--accent-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* -- Article Card -- */
+.article-card{overflow:hidden}
+.article-img{height:160px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;position:relative;overflow:hidden}
+.article-meta{font-size:.78rem;color:var(--text-muted)}
+
+/* -- Toast Notification -- */
+.toast-sp{position:fixed;bottom:2rem;right:2rem;padding:1rem 1.5rem;border-radius:var(--radius-md);color:#fff;font-weight:600;font-size:.9rem;z-index:9999;display:flex;align-items:center;gap:.5rem;transform:translateY(120%);opacity:0;transition:all .4s cubic-bezier(.34,1.56,.64,1);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.toast-sp.show{transform:translateY(0);opacity:1}
+.toast-sp.success{background:var(--green-700);border:1px solid var(--green-500)}
+.toast-sp.error{background:#7f1d1d;border:1px solid var(--red-500)}
+
+/* -- Animations -- */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+.ani{animation:fadeInUp .5s ease-out forwards}
+.ani-d1{animation-delay:.08s}.ani-d2{animation-delay:.16s}.ani-d3{animation-delay:.24s}.ani-d4{animation-delay:.32s}
+
+
+
+
+/* ============ RESPONSIVE — Tablet ============ */
+@media(min-width:768px){
+    .hero{padding:4.5rem 0 3.5rem}
+    .hero h1{font-size:2.8rem}
+    .section-title{font-size:2rem}
+}
+
+/* ============ RESPONSIVE — Desktop ============ */
+@media(min-width:1024px){
+    .hero{padding:5.5rem 0 4rem}
+    .hero h1{font-size:3.4rem}
+    .section-title{font-size:2.2rem}
+    .navbar-sp{padding:.7rem 0}
+}

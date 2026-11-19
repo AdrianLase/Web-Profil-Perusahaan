@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10b981" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded box -->
+  <rect x="5" y="5" width="90" height="90" rx="26" fill="url(#logoGrad)" filter="url(#shadow)"/>
+
+  <!-- Leaf & Grain Motif -->
+  <path d="M50 22 C32 22 25 38 25 54 C25 70 38 78 50 78 C62 78 75 70 75 54 C75 38 68 22 50 22 Z" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  
+  <path d="M50 25 C50 45 35 60 35 60 M50 35 C50 50 65 60 65 60" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Center Stem -->
+  <path d="M50 22 L50 78" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Accent Sparkle -->
+  <circle cx="68" cy="28" r="6" fill="url(#accentGrad)" />
+</svg>
